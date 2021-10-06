@@ -45,6 +45,8 @@ $(document).ready(function(){
     }, 100);
   }
 
+  
+
   //$("input[type='tel']").mask("+7 999 999 999");    
 	
 	var swiper = new Swiper(".hero-slider", {

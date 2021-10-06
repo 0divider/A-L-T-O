@@ -74,29 +74,122 @@
 				    <li class="breadcrumb-item active" aria-current="page">Отзывы</li>
 				  </ol>
 				</nav>
-        <div class="section cases">
+        <div class="section">
           <h1>Отзывы</h1>
           <div class="review-list">
             <div class="review-item">
-              <div class="row">
-                <div class="col-md-3 offset-1">
-                  <div class="rate"><img src="img/stars.png" alt=""></div>
-                  <cite>
-                    Гасина Юлия Ильясовна, владелец 
-                    <a href="#">smart96.ru</a>
-                  </cite>
-                </div>
-                <div class="col-md-6 offset-1 review-item-rht">
+              <div class="review-item-lft">
+                <div class="rate"><img src="img/stars.png" alt=""></div>
+                <cite>
+                  Гасина Юлия Ильясовна, владелец 
+                  <span><a href="#">smart96.ru</a></span>
+                </cite>
+              </div>
+              <div class="review-item-rht">
+                <div class="review-item-txt">
                   <div class="h3">«Выражаю благодарность специалистам компании Alto за успешное выполнение возложенных на них задач.»</div>
                   <a href="#">Оригинал</a>
                 </div>
+              </div>              
+            </div>
+            <div class="review-item">
+              <div class="review-item-lft">
+                <div class="rate"><img src="img/stars.png" alt=""></div>
+                <cite>
+                  С.В. Усанов, владелец
+                  <span><a href="#"> extremehobby.ru</a></span>
+                </cite>
               </div>
+              <div class="review-item-rht">
+                <div class="review-item-txt">
+                  <div class="h3">«С порученным объемом работы специалисты компании справились быстрее озвученного в смете срока, не вызвав никаких нареканий по качеству.»</div>
+                  <a href="#">Оригинал</a>
+                </div>
+              </div>              
+            </div>
+            <div class="review-item">
+              <div class="review-item-lft">
+                <div class="rate"><img src="img/stars.png" alt=""></div>
+                <cite>
+                  С.В. Усанов, владелец
+                  <span><a href="#"> extremehobby.ru</a></span>
+                </cite>
+              </div>
+              <div class="review-item-rht">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                </div>
+              </div>              
             </div>
           </div>
+          <nav aria-label="Page navigation">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  ←
+                </a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  →
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>        
       </div>
     </main>
     <!--/ main -->    
+    <!-- leave-feeadback -->
+    <div class="leave-feeadback">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="h2">Оставить отзыв</div>
+          </div>
+          <div class="col-sm-6">
+            <div class="feeadback-form">
+              <form action="">
+                <div class="form-group">
+                  <label>Ваше имя</label>
+                  <input type="text" placeholder="Имя" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Должность</label>
+                  <input type="text" placeholder="" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Адрес вашего сайта</label>
+                  <input type="text" placeholder="https://" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Оценка нашей работы</label>
+                  <div class="rateit svg" data-rateit-starwidth="42" data-rateit-starheight="40"></div>
+                </div>
+                <div class="form-group">
+                  <label>Текст отзыва</label>
+                  <textarea cols="10" rows="1" class="form-control form-area"></textarea>
+                </div>
+                <div class="form-group">
+                  <input type="file" name="" id="">
+                  <div class="attach-hint">JPG, PNG, DOC. До 10 МБ</div>
+                </div>
+                <div class="check-set">
+                  <input type="checkbox" name="agree" id="agree">
+                  <label for="agree">Согласен с <a href="#">политикой конфиденциальности</a></label>
+                </div>
+                <button type="submit" class="btn">Оставить заявку</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ leave-feeadback -->
 
     <!-- form -->
     <div class="form">
@@ -279,6 +372,7 @@
     <script src="js/jcf.js"></script>            
     <script src="js/jcf.file.js"></script>            
     <script src="js/jquery.hoverIntent.min.js"></script>    
+    <script src="js/jquery.rateit.min.js"></script>    
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/f.js"></script>
   </body>

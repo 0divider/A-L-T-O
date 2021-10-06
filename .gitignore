@@ -2,5 +2,6 @@
 *.scss
 *.kit
 *.zip
+prepros.config
 sass/
 source/
