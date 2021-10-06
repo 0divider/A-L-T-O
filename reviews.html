@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta name="description" content="">
+    <title>#</title>        
+    <link href="css/bootstrap.css" rel="stylesheet">        
+    <link href="css/all.css" rel="stylesheet">        
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  </head>
+  <body>
+
+	  <!-- header -->
+    <header class="header">
+      <div class="container-fluid">
+        <div class="head-lft">
+          <a href="#" class="logo"><svg class="icon"><use xlink:href="#logo"></use></svg></a>
+          <span>ex. Altopromo</span>
+        </div>  
+        <div class="head-rht">
+          <div class="search-box">
+            <form action="">
+              <input type="text" placeholder="Поиск..." class="search-control">
+              <button type="submit" class="search-btn"><svg class="icon"><use xlink:href="#arrw-next"></use></svg></button>
+            </form>
+          </div>
+          <ul class="menu">
+            <li>
+              <a href="#">Услуги</a>
+              <ul>
+                <li><a href="#">Разработка сайтов и веб-сервисов</a></li>
+                <li><a href="#">Интернет-маркетинг</a></li>
+                <li><a href="#">Решения для B2B</a></li>
+                <li><a href="#">Поддержка и развитие сайтов и веб-сервисов</a></li>
+                <li><a href="#">Аудит IT</a></li>                  
+              </ul>
+            </li>
+            <li>
+              <a href="#">О нас</a>
+              <ul>
+                <li><a href="#">Компания</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Прислать ошибку</a></li>
+                <li><a href="#">Для клиентов</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Вакансии</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Кейсы</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>            
+          <div class="head-panel">
+            <div class="head-contacts">
+              <a href="tel:+74995770271">+7 (499) 577-02-71</a>
+              <a href="mailto:help@altopromo.com">help@altopromo.com</a>
+            </div>
+            <button class="btn btn-extra" data-toggle="modal" data-target="#feedbackpopup">Оставить заявку</button>
+          </div>  
+        </div>
+        <button class="search-toggle"><svg class="icon"><use xlink:href="#search"></use></svg></button>
+        <button class="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </header>
+    <!--/ header -->      
+
+    <!-- main -->
+    <main class="main main-inner">
+      <div class="container">
+      	<nav aria-label="breadcrumb">      		 
+				  <ol class="breadcrumb">
+				    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+				    <li class="breadcrumb-item active" aria-current="page">Отзывы</li>
+				  </ol>
+				</nav>
+        <div class="section cases">
+          <h1>Отзывы</h1>
+          <div class="review-list">
+            <div class="review-item">
+              <div class="row">
+                <div class="col-md-3 offset-1">
+                  <div class="rate"><img src="img/stars.png" alt=""></div>
+                  <cite>
+                    Гасина Юлия Ильясовна, владелец 
+                    <a href="#">smart96.ru</a>
+                  </cite>
+                </div>
+                <div class="col-md-6 offset-1 review-item-rht">
+                  <div class="h3">«Выражаю благодарность специалистам компании Alto за успешное выполнение возложенных на них задач.»</div>
+                  <a href="#">Оригинал</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </main>
+    <!--/ main -->    
+
+    <!-- form -->
+    <div class="form">
+      <div class="container">
+        <h2>Расскажите <br>о вашей задаче</h2>        
+        <div class="col-sm-9 col-lg-9 col-xl-8 form-box">
+          <form role="form">
+            <div class="form-group">
+              <label>Ваше имя</label>
+              <input type="text" placeholder="ФИО" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Эл. почта или телефон</label>
+              <input type="email" placeholder="example@gmail.com" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Какая ситуация сейчас? К какому результату стремитесь?</label>
+              <textarea cols="10" rows="1" class="form-control form-area"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="file" name="" id="">
+              <div class="attach-hint">JPG, PNG, DOC. До 10 МБ</div>
+            </div>
+            <div class="check-set">
+              <input type="checkbox" name="agree" id="agree">
+              <label for="agree">Согласен с <a href="#">политикой конфиденциальности</a></label>
+            </div>
+            <button type="submit" class="btn">Оставить заявку</button>
+          </form> 
+          <div class="form-note">Гарантируем, что ваши данные не будут переданы третьим лицам</div>  
+        </div>                
+        <div class="form-decor"></div>
+        <div class="form-decor"></div>
+      </div>
+    </div>
+    <!--/ form -->    
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="foot-top h1">
+          <a href="mailto:help@altopromo.com">help@altopromo.<span>com →</span></a>
+        </div>
+        <div class="row foot-mdl">
+          <div class="col-sm-5 col-md-6 foot-inner">
+            <div class="logo"><img src="img/logo.svg" alt=""></div>
+            <div class="foot-box">
+              <div class="foot-slogan">E-commerce<br> development + consulting</div>
+              ex. Altopromo
+              <div class="partner"><img src="img/agima.svg" alt=""></div>
+            </div>
+          </div>
+          <div class="col-sm-7 col-md-6">
+            <div class="row foot-contact">
+              <div class="col-6 col-sm-7 col-md-6">
+                <a href="#feedbackpopup" data-target="#feedbackpopup" data-toggle="modal" class="btn btn-extra">Оставить заявку</a>
+              </div>
+              <div class="col-6 col-sm-5 col-md-6">
+                <a href="tel:+74995770271">+7 (499) 577-02-71</a>
+              </div>
+            </div>
+            <div class="row foot-nav">
+              <div class="col-6 col-sm-7 col-md-6">
+                <ul class="foot-menu">
+                  <li><a href="#">Компания</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Портфолио</a></li>
+                  <li><a href="#">Блог</a></li>
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="#">Прислать ошибку</a></li>
+                  <li><a href="#">Для клиентов</a></li>
+                  <li><a href="#">Отзывы</a></li>
+                  <li><a href="#">Вакансии</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-sm-5 col-md-6">
+                <ul class="foot-menu">
+                  <li><a href="#">Продвижение сайта</a></li>
+                  <li><a href="#">Создание сайта</a></li>
+                  <li><a href="#">Контекстная реклама</a></li>
+                  <li><a href="#">Создание интернет-магазина</a></li>
+                  <li><a href="#">Консалтинг</a></li>
+                  <li><a href="#">B2B сайты</a></li>
+                  <li><a href="#">Разработка прототипа</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row foot-btm">
+          <div class="col-6 col-sm-5 col-md-6">&copy; 2014-2021</div>
+          <div class="col-6 col-sm-7 col-md-6">
+            <div class="row">
+              <div class="col-sm-6"><a href="#">Партнерская программа</a></div>
+              <div class="col-sm-6"><a href="#">Карта сайта</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--/ footer -->    
+    <!-- svg -->
+    <svg width="0" height="0" style="display: none;">
+      <symbol id="pointer" viewBox="0 0 16 22">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.82192 0H6.79452V0.653465H7.67123V4.79208H9.64384V5.44554H12.274V6.09901H13.8082V6.75248H14.9041V7.84158H16V14.5941H14.9041V17.4257H14.2466V22H5.0411V19.604H4.16438V17.4257H3.28767V15.6832H2.19178V13.7228H1.09589V12.6337H0V9.36634H3.06849V10.0198H3.94521V0.653465H4.82192V0ZM5.0411 1.08911V14.1584H3.94521V11.3267H2.84932V10.4554H1.09589V12.198H2.19178V13.2871H3.28767V15.2475H4.38356V16.9901H5.26027V18.7327H6.13699V20.9109H13.1507V17.4257H13.8082V14.1584H14.9041V8.27723H13.8082V7.18812H12.0548V6.53465H10.5205V9.80198H9.42466V5.88119H7.67123V9.80198H6.57534V1.08911H5.0411Z" fill="#0173FF"/>
+      </symbol>
+      <symbol id="arrw-next" viewBox="0 0 36 32">
+        <path d="M20.246 0L36 16L20.3093 31.9357L16.9561 32L31.8875 17.0281H0V14.9719H31.8875L16.9561 0H20.246Z"/>
+      </symbol>
+      <symbol id="arrw-prev" viewBox="0 0 36 32">
+        <path d="M15.754 0L0 16L15.6907 31.9357L19.0439 32L4.11248 17.0281H36V14.9719H4.11248L19.0439 0H15.754Z" fill="#fff"/>
+      </symbol>
+      <symbol id="search" fill="none" viewBox="0 0 18 18">
+        <path d="M5.79942 12.2006C8.3617 14.7629 12.516 14.7629 15.0783 12.2006C17.6406 9.6383 17.6406 5.48401 15.0783 2.92172C12.516 0.359428 8.3617 0.359428 5.79942 2.92172C3.23713 5.48401 3.23713 9.6383 5.79942 12.2006ZM5.79942 12.2006L1 17" stroke="#12131A"/>
+      </symbol>      
+      <symbol id="close" viewBox="0 0 32 32">
+        <path d="M32 1.89349L17.8935 16L32 30.1065L30.1065 32L16 17.8935L1.89349 32L0 30.1065L14.1065 16L0 1.89349L1.89349 0L16 14.1065L30.1065 0L32 1.89349Z" fill="#F7F8FA"/>
+      </symbol> 
+      <symbol id="download" viewBox="0 0 26 25" fill="none">
+        <path d="M2.69864 14.6982L13.0011 25.0002L23.2617 14.739L23.2617 12.5002L14.0007 21.5L14.0007 1.66207L12.0007 1.66207L12.0007 21.5L2.69864 12.4377V14.6982Z" fill="#0173FF"/>
+      </symbol>
+      <symbol id="logo" viewBox="0 0 116 70">
+        <path d="M8.39041 28.7241L14.1918 42.1931H11.411L10.1164 39.2H4.0274L2.73288 42.1931H0L5.80137 28.7241H8.39041ZM7.04795 32.2483L5.03425 36.8345H9.06164L7.04795 32.2483Z" />
+        <path d="M39.226 28.7241V39.8276H45.9384V42.1931H36.589V28.7241H39.226Z" />
+        <path d="M68.3836 28.7241H79.6986V31.0897H75.3836V42.1931H72.7466V31.0897H68.3836V28.7241Z" />
+        <path d="M114.034 40.4071C112.74 41.7588 111.062 42.4347 109.048 42.4347C107.034 42.4347 105.356 41.7588 104.062 40.4071C102.767 39.0554 102.096 37.414 102.096 35.4347C102.096 33.4554 102.767 31.814 104.062 30.4623C105.356 29.1105 107.034 28.4347 109.048 28.4347C111.062 28.4347 112.74 29.1105 114.034 30.4623C115.329 31.814 116 33.4554 116 35.4347C116 37.414 115.329 39.0554 114.034 40.4071ZM105.979 38.7174C106.795 39.6347 107.801 40.0692 109.048 40.0692C110.295 40.0692 111.301 39.6347 112.116 38.7174C112.932 37.8002 113.363 36.7381 113.363 35.4347C113.363 34.1312 112.932 33.0209 112.116 32.1519C111.301 31.283 110.295 30.8002 109.048 30.8002C107.801 30.8002 106.795 31.2347 105.979 32.1519C105.164 33.0209 104.733 34.1312 104.733 35.4347C104.733 36.7381 105.164 37.8485 105.979 38.7174Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.7671 70L24.7671 28H25.726L25.726 70H24.7671Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M56.5616 56.4828V14.4828H57.5205V56.4828H56.5616Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M90.274 42V4.22039e-08L91.2329 0V42H90.274Z" />
+      </symbol>
+    </svg>  
+    <!--/ svg -->    
+    <!-- Modal -->
+    <div class="modal fade" id="feedbackpopup" tabindex="-1" aria-labelledby="feedbackpopupLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">          
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <svg class="icon"><use xlink:href="#close"></use></svg>
+          </button>
+          <div class="h2 modal-title">Оставить заявку</div>
+          <form action="">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="">Ваше имя</label>
+                  <input type="text" placeholder="Имя" class="form-control">
+                </div>              
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="">Эл. почта или телефон</label>
+                  <input type="tel" placeholder="+7 (   )   -  -" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="">Ваше сообщение</label>
+                  <textarea name="" id="" cols="30" rows="10" class="form-control form-area"></textarea>
+                </div>              
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="file" name="" id="">
+                  <div class="attach-hint">JPG, PNG, DOC. До 10 МБ</div>
+                </div>
+              </div>
+            </div>
+            <div class="check-set">
+              <input type="checkbox" name="agree" id="agree-1">
+              <label for="agree-1">Согласен с <a href="#">политикой конфиденциальности</a></label>
+            </div>
+            <button type="submit" class="btn">Отправить сообщение</button>
+          </form>  
+        </div>
+      </div>
+    </div>
+    <!--/ Modal -->	
+	<!-- js -->	
+	<script src="js/jquery.min.js"></script>            
+    <script src="js/bootstrap.min.js"></script>                
+    <script src="js/jcf.js"></script>            
+    <script src="js/jcf.file.js"></script>            
+    <script src="js/jquery.hoverIntent.min.js"></script>    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/f.js"></script>
+  </body>
+</html>

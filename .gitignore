@@ -1,0 +1,6 @@
+#
+*.scss
+*.kit
+*.zip
+sass/
+source/
