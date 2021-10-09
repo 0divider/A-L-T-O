@@ -44,10 +44,15 @@ $(document).ready(function(){
       $("#case-1").addClass('current');
     }, 100);
   }
-
   
-
-  //$("input[type='tel']").mask("+7 999 999 999");    
+  $('.scroll-to').click(function(e){
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 900);
+    return false;    
+  });
+    
 	
 	var swiper = new Swiper(".hero-slider", {
     slidesPerView: 1,    
