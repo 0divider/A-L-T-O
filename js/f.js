@@ -48,7 +48,7 @@ $(document).ready(function(){
   $('.scroll-to').click(function(e){
     e.preventDefault();
     $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
+        scrollTop: $( $.attr(this, 'href') ).offset().top - 60
     }, 900);
     return false;    
   });
@@ -97,6 +97,21 @@ $(document).ready(function(){
         nextEl: ".swiper-review-prev",
         prevEl: ".swiper-review-next"
     },
+  });
+
+  var swiper = new Swiper(".work-slider", {
+    slidesPerView: '1',    
+    spaceBetween: 20,
+    navigation: {
+        nextEl: ".swiper-work-prev",
+        prevEl: ".swiper-work-next"
+    },           
+    breakpoints: {
+        992: {          
+          spaceBetween: 40,
+          slidesPerView: 1,
+        }        
+      }   
   });
 
   var bPos = $(window).scrollTop();
