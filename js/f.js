@@ -51,8 +51,7 @@ $(document).ready(function(){
         scrollTop: $( $.attr(this, 'href') ).offset().top - 60
     }, 900);
     return false;    
-  });
-    
+  });  
 	
 	var swiper = new Swiper(".hero-slider", {
     slidesPerView: 1,    
