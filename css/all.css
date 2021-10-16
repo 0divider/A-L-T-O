@@ -4,7 +4,8 @@
 /*offsets*/
 @font-face {
   font-family: "TTHoves";
-  src: url("../fonts/tthoves-regular-webfont.woff2") format("woff2"), url("../fonts/tthoves-regular-webfont.woff") format("woff"), url("../fonts/tthoves-regular-webfont.ttf") format("truetype");
+  src: url("../fonts/TTHoves-Regular.eot");
+  src: local("TT Hoves Regular"), local("TTHoves-Regular"), url("../fonts/TTHoves-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/TTHoves-Regular.woff2") format("woff2"), url("../fonts/TTHoves-Regular.woff") format("woff"), url("../fonts/TTHoves-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -253,6 +254,22 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.hero-about {
+  background: url("../img/about-bg.jpg") center 0 no-repeat;
+  background-size: cover;
+  height: auto;
+  padding-top: 20vh;
+}
+.hero-about .breadcrumb-item.active {
+  color: #fff;
+}
+.hero-about .breadcrumb-item + .breadcrumb-item::before {
+  color: #fff;
+}
+.hero-about:after {
+  display: none;
 }
 
 .hero-img {
@@ -555,6 +572,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
+  fill: #0173FF;
 }
 
 .header.header-main .btn {
@@ -569,6 +587,10 @@ body {
 }
 .header.header-main .menu > li.has-menu > a:after {
   border-color: #fff;
+}
+
+.wrapper {
+  position: relative;
 }
 
 .slider-box {
@@ -672,6 +694,10 @@ body {
 }
 .main-inner .h2 + .blog-list {
   margin-top: 100px;
+}
+
+.hero-about + .main-inner {
+  padding-top: 100px;
 }
 
 .case-unit:last-child {
@@ -2462,6 +2488,92 @@ figure img {
   max-width: 460px;
 }
 
+.about-promo .h3, .about-promo h3 {
+  margin-bottom: 40px;
+}
+
+.row-achiev {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.achiev-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #8A8C99;
+  padding-bottom: 10px;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 40px;
+}
+.achiev-bar .icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+.achiev-bar .icon-pointer {
+  width: 15px;
+  height: 21px;
+}
+.achiev-bar .icon-1c {
+  width: 20px;
+  height: 20px;
+}
+
+.achiev-unit {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 260px;
+          flex: 0 0 260px;
+  max-width: 260px;
+}
+
+.achiev-unit-title {
+  margin-bottom: 40px;
+}
+.achiev-unit-title .h3 {
+  margin-bottom: 10px;
+}
+.achiev-unit-title span {
+  display: block;
+}
+
+.achiev-unit-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team-slider-box {
+  overflow: hidden;
+}
+
+.team-slider-box .swiper {
+  overflow: visible;
+}
+
+.team-unit-img {
+  height: 390px;
+  margin-bottom: 20px;
+}
+.team-unit-img img {
+  max-width: 100%;
+}
+
+.team-slider .h3 {
+  margin-bottom: 20px;
+}
+
+.work-promo {
+  margin-bottom: 100px;
+}
+
 @media (max-width: 1500px) {
   .hero-slider .inner {
     padding: 30px;
@@ -2551,6 +2663,10 @@ figure img {
   .rate-btns > span {
     padding-left: 60px;
   }
+
+  .team-unit-img {
+    height: 300px;
+  }
 }
 @media (max-width: 1199px) {
   .modal-dialog {
@@ -2614,6 +2730,12 @@ figure img {
   .hero {
     min-height: 620px;
     height: 620px;
+  }
+
+  .hero-about {
+    height: 360px;
+    min-height: 360px;
+    padding-top: 87px;
   }
 
   .hero-title {
@@ -2705,6 +2827,10 @@ figure img {
 
   .main-inner {
     padding-top: 40px;
+  }
+
+  .hero-about + .main-inner {
+    padding-top: 50px;
   }
 
   .breadcrumb {
@@ -3279,6 +3405,36 @@ figure img {
 .service-list-more .service-unit:nth-last-child(2) {
     display: none;
   }
+
+  .about-promo .h3, .about-promo h3 {
+    margin-bottom: 20px;
+  }
+
+  .achiev-unit {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 72%;
+            flex: 0 0 72%;
+    max-width: 72%;
+  }
+
+  .achiev-unit-list .achiev-unit {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+    max-width: 40%;
+  }
+
+  .achiev-bar, .achiev-unit-title {
+    margin-bottom: 20px;
+  }
+
+  .team-unit-img {
+    height: auto;
+  }
+
+  .work-promo {
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 767px) {
   .slider-box {
@@ -3401,6 +3557,11 @@ figure img {
   .hero {
     padding-bottom: 100px;
     height: auto;
+  }
+
+  .hero-about {
+    min-height: 220px;
+    padding: 87px 0 0 0;
   }
 
   .hero-in {
@@ -4028,6 +4189,21 @@ figure img {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+
+  .achiev-unit-list {
+    margin: 0 -10px 54px -10px;
+  }
+
+  .achiev-unit-list .achiev-unit {
+    padding: 0 10px;
+  }
+
+  .achiev-unit, .achiev-unit-list .achiev-unit {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 @media (max-width: 410px) {

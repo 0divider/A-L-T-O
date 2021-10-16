@@ -11,11 +11,12 @@ $(document).ready(function(){
   });
 
   $('.hamburger').click(function(){
+    $('.header').removeClass('js-search');    
     $('body').toggleClass('js-open');    
   })
 
   $('.search-toggle').click(function(){
-    $('.header').toggleClass('js-search');
+    $('.header').toggleClass('js-search');    
   })
 
   $('.js-mobile .has-menu > a').click(function(e){
@@ -110,6 +111,25 @@ $(document).ready(function(){
           spaceBetween: 40,
           slidesPerView: 1,
         }        
+      }   
+  });
+
+  var swiper = new Swiper(".team-slider", {
+    slidesPerView: '2',    
+    spaceBetween: 20,
+    navigation: {
+        nextEl: ".swiper-team-prev",
+        prevEl: ".swiper-team-next"
+    },           
+    breakpoints: {
+        556: {          
+          spaceBetween: 20,
+          slidesPerView: 4,
+        },
+        992: {          
+          spaceBetween: 40,
+          slidesPerView: 4,
+        }
       }   
   });
 
