@@ -86,6 +86,20 @@ a:active {
   color: #8A8C99;
 }
 
+.btn-outline {
+  display: inline-block;
+  border: 1px solid #0173FF;
+  border-radius: 60px;
+  padding: 5px 20px;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.btn-outline:hover, .btn-outline:focus {
+  background: #0173FF;
+  color: #fff;
+  text-decoration: none;
+}
+
 .foot-nav li {
   display: block;
 }
@@ -2574,6 +2588,269 @@ figure img {
   margin-bottom: 100px;
 }
 
+.case-inf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 123px;
+  margin-top: -14px;
+  margin-bottom: 150px;
+}
+
+.case-inf-lft {
+  max-width: 480px;
+  padding-right: 20px;
+}
+
+.case-hero {
+  background: #12131A;
+  padding: 260px 0;
+  position: relative;
+  z-index: 2;
+}
+.case-hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.case-hero:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 200px;
+  width: 1px;
+  background: #8A8C99;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -100px;
+}
+.case-hero:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 200px;
+  width: 1px;
+  background: #8A8C99;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -100px;
+}
+
+.case-detail {
+  padding: 100px 0 0 0;
+}
+
+.case-detail-head {
+  margin-bottom: 150px;
+}
+.case-detail-head .h3, .case-detail-head h3 {
+  margin-bottom: 40px;
+}
+.case-detail-head div[class^=col-]:last-child {
+  margin-top: 100px;
+}
+.case-detail-head .inner {
+  max-width: 460px;
+}
+.case-detail-head ol {
+  list-style: none;
+  counter-reset: point;
+}
+.case-detail-head ol li {
+  padding-left: 36px;
+  position: relative;
+}
+.case-detail-head ol li + li {
+  margin-top: 20px;
+}
+.case-detail-head ol li:before {
+  content: counter(point);
+  counter-increment: point 1;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  text-align: center;
+}
+
+.case-label {
+  font-size: 13px;
+  line-height: 130%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.case-detail-section {
+  margin-bottom: 160px;
+}
+.case-detail-section .inner {
+  max-width: 50%;
+}
+.case-detail-section .case-label {
+  margin-bottom: 50px;
+  position: relative;
+}
+.case-detail-section .case-label span {
+  display: inline-block;
+  padding: 0 34px;
+  background: #F7F8FA;
+  position: relative;
+  z-index: 1;
+  margin-left: -34px;
+}
+.case-detail-section .case-label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #8A8C99;
+  height: 1px;
+  left: -9999px;
+  right: 0;
+  top: 9px;
+}
+.case-detail-section .h2, .case-detail-section h2 {
+  margin-bottom: 160px;
+}
+.case-detail-section .h3, .case-detail-section h3 {
+  margin-bottom: 20px;
+}
+
+.case-detail figure {
+  margin: 40px 0 160px 0;
+}
+.case-detail figure:last-child {
+  margin-bottom: -60px;
+}
+.case-detail figure > div {
+  background: #E8E9ED;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 60px;
+}
+.case-detail figure figcaption {
+  font-size: 13px;
+  line-height: 17px;
+  margin-top: 20px;
+}
+.case-detail figure img {
+  max-width: 100%;
+}
+
+.case-total {
+  padding-bottom: 78px;
+  padding-top: 100px;
+  border-bottom: 1px solid #8A8C99;
+  border-top: 1px solid #8A8C99;
+  position: relative;
+  margin-top: 360px;
+}
+.case-total .h2, .case-total h2 {
+  margin-bottom: 100px;
+}
+.case-total .h3, .case-total h3 {
+  margin-bottom: 40px;
+}
+.case-total ul {
+  margin-bottom: 40px;
+}
+.case-total ul li {
+  display: block;
+  position: relative;
+  padding-left: 36px;
+}
+.case-total ul li + li {
+  margin-top: 20px;
+}
+.case-total ul li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  background: #12131A;
+  border-radius: 50%;
+}
+
+.person {
+  color: #8A8C99;
+}
+.person span {
+  display: block;
+  color: #000;
+}
+
+.person-list {
+  margin-bottom: 20px;
+}
+.person-list div[class^=col-] {
+  margin-bottom: 20px;
+}
+
+.section-reviews .h2, .section-reviews h2 {
+  margin-bottom: 100px;
+}
+
+.case-total-ico {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #8A8C99;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -20px;
+  background: #F7F8FA;
+}
+.case-total-ico:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 180px;
+  top: -180px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #8A8C99;
+}
+.case-total-ico .icon {
+  width: 20px;
+  height: 14px;
+}
+
 @media (max-width: 1500px) {
   .hero-slider .inner {
     padding: 30px;
@@ -2666,6 +2943,18 @@ figure img {
 
   .team-unit-img {
     height: 300px;
+  }
+
+  .case-detail-section .h2, .case-detail-section h2 {
+    margin-bottom: 100px;
+  }
+
+  .case-detail figure {
+    margin-bottom: 100px;
+  }
+
+  .case-inf {
+    padding-right: 0;
   }
 }
 @media (max-width: 1199px) {
@@ -3434,6 +3723,155 @@ figure img {
 
   .work-promo {
     margin-bottom: 50px;
+  }
+
+  .case-inf {
+    margin-bottom: 100px;
+    display: block;
+  }
+
+  .case-hero:before {
+    height: 100px;
+    top: -50px;
+  }
+
+  .case-hero:after {
+    height: 100px;
+    bottom: -50px;
+  }
+
+  .case-inf-lft {
+    margin-bottom: 20px;
+  }
+
+  .case-hero {
+    padding: 100px 0;
+  }
+
+  .case-detail {
+    padding-left: 8.3333333333%;
+    padding-right: 8.3333333333%;
+  }
+
+  .case-detail-head div[class^=col-]:last-child {
+    margin-top: 50px;
+  }
+
+  .case-label, .case-detail-section .case-label {
+    margin-bottom: 20px;
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .case-detail-head .inner, .case-detail-section .inner {
+    max-width: 100%;
+  }
+
+  .case-detail-section .case-label span {
+    padding: 0 20px;
+    margin-left: -20px;
+  }
+
+  .case-detail-section .case-label:before {
+    top: 6px;
+  }
+
+  .case-detail-head {
+    margin-bottom: 100px;
+  }
+  .case-detail-head h3, .case-detail-head .h3 {
+    margin-bottom: 20px;
+  }
+
+  .case-detail-head ol li + li {
+    margin-top: 10px;
+  }
+
+  .case-detail-section .h2, .case-detail-section h2 {
+    margin-bottom: 90px;
+  }
+
+  .case-detail-section .h3, .case-detail-section h3 {
+    margin-bottom: 20px;
+  }
+
+  .case-detail figure {
+    margin: 20px 0 110px 0;
+  }
+
+  .case-detail figure > div {
+    height: auto;
+    min-height: 374px;
+    padding: 50px;
+  }
+
+  .case-detail figure figcaption {
+    font-size: 10px;
+    line-height: 13px;
+    margin-top: 10px;
+  }
+
+  .case-total {
+    margin-top: 0;
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+
+  .case-detail-section {
+    margin-bottom: 120px;
+  }
+
+  .case-detail figure:last-child {
+    margin-bottom: 0;
+  }
+
+  .case-total-ico:before {
+    display: none;
+  }
+
+  .case-total .h2, .case-total h2 {
+    margin-bottom: 50px;
+  }
+
+  .case-total .h3, .case-total h3 {
+    margin-bottom: 20px;
+  }
+
+  .case-total ul li + li {
+    margin-top: 10px;
+  }
+
+  .case-total ul {
+    margin-bottom: 20px;
+  }
+
+  .case-total ul li {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .case-total ul li:before {
+    top: 8px;
+  }
+
+  .case-total > .row > div[class^=col-]:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .person-list div[class^=col-] {
+    margin-bottom: 10px;
+  }
+
+  .person-list {
+    margin-bottom: 10px;
+  }
+
+  .case-inf {
+    margin-top: -30px;
+  }
+
+  .case-detail-head ol li:before {
+    font-size: 10px;
+    top: 2px;
   }
 }
 @media (max-width: 767px) {
@@ -4204,6 +4642,59 @@ figure img {
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
     max-width: 50%;
+  }
+
+  .case-detail {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .case-inf {
+    margin-bottom: 75px;
+  }
+
+  .case-inf-lft {
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .case-hero {
+    padding: 50px 0;
+  }
+
+  .case-hero:before {
+    height: 50px;
+    top: -25px;
+  }
+
+  .case-hero:after {
+    height: 50px;
+    bottom: -25px;
+  }
+
+  .case-detail {
+    padding-top: 45px;
+  }
+
+  .case-detail-section .case-label {
+    padding-left: 60px;
+  }
+
+  .case-detail-section .case-label:before {
+    left: 0;
+  }
+
+  .case-detail-section .case-label span {
+    margin-left: 0;
+  }
+
+  .case-detail figure > div {
+    padding: 50px 25px;
+    min-height: 180px;
+  }
+
+  .case-detail figure figcaption {
+    margin-top: 5px;
   }
 }
 @media (max-width: 410px) {
