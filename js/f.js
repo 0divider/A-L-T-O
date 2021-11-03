@@ -54,7 +54,7 @@ $(document).ready(function(){
     return false;    
   });  
 	
-	var swiper = new Swiper(".hero-slider", {
+	var swiperHero = new Swiper(".hero-slider", {
     slidesPerView: 1,    
     spaceBetween: 10,
     navigation: {
@@ -63,17 +63,20 @@ $(document).ready(function(){
     },       
     on: {
       slideChange: function () {
-        if (swiper.activeIndex == 0) {                  
+        if (swiperHero.activeIndex == 0) {                  
           $('.hero-img').removeClass('current');
           $('.hero-img-0').addClass('current');
-        }        
-        if (swiper.activeIndex == 1) {                  
+          console.log('Slide 1 is active')
+        }                
+        if (swiperHero.activeIndex == 1) {                  
           $('.hero-img').removeClass('current');
           $('.hero-img-1').addClass('current');
+          console.log('Slide 2 is active')
         }        
-        if (swiper.activeIndex == 2) {                  
+        if (swiperHero.activeIndex == 2) {                  
           $('.hero-img').removeClass('current');
           $('.hero-img-2').addClass('current');
+          console.log('Slide 3 is active')
         }
       },
     },
@@ -83,7 +86,7 @@ $(document).ready(function(){
           slidesPerView: 2,
         }        
       }   
-  });
+  });  
 
   var swiper1 = new Swiper(".reviews-slider", {    
     effect: 'fade',
@@ -147,6 +150,20 @@ $(document).ready(function(){
     } else{
         $('.header').removeClass('sticky');         
     } 
+  });
+
+  $('.go-top').click(function(){
+     $('html, body').animate({scrollTop:0});
+     return false;
+  });    
+
+  $(window).scroll(function () { 
+   var bPos = $(window).scrollTop();
+      if(bPos > 200){
+          $('.go-top').fadeIn(300);          
+      } else{
+          $('.go-top').fadeOut(300);         
+      } 
   });
 	
 });

@@ -9,6 +9,9 @@
     <link href="css/bootstrap.css" rel="stylesheet">        
     <link href="css/all.css" rel="stylesheet">        
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
   </head>
   <body>
     <div class="wrapper">
@@ -72,9 +75,8 @@
       	<nav aria-label="breadcrumb">      		 
 				  <ol class="breadcrumb">
 				    <li class="breadcrumb-item"><a href="#">Главная</a></li>
-            <li class="breadcrumb-item"><a href="#">Блог</a></li>
-            <li class="breadcrumb-item"><a href="#">B2B</a></li>
-				    <li class="breadcrumb-item active" aria-current="page">B2B-маркетинг без прикрас</li>            
+            <li class="breadcrumb-item"><a href="#">Вакансии</a></li>            
+				    <li class="breadcrumb-item active" aria-current="page">PHP программист</li>            
 				  </ol>
 				</nav>
         <div class="section">          
@@ -84,7 +86,7 @@
               <div class="vacancy-short">
                 <div class="h3">PHP программист</div>
                 <div>
-                  <div class="text2">Офис или удалённо.<br> 30000 — 60000 ₽</div>
+                  <div class="text2">Офис или удалённо.<br>30000 — 60000 ₽</div>
                   <a href="#" class="btn">Откликнуться</a>
                 </div>
               </div>
@@ -127,7 +129,7 @@
                   <li>Работа в связке с крутыми менеджерами, которые умеют переводить с программерского на клиентский</li>
                 </ul>
                 <p>При отклике сразу отправляйте примеры вашего кода.</p>
-                <p>От тебя ждём начальные знания(6+ месяцев) по PHP (умение использовать ООП, знание MVC) и готовность быстро обучаться. Рассматриваем, как Junior, так и миддлов.</p>
+                <p>От тебя ждём начальные знания (6+ месяцев) по PHP (умение использовать ООП, знание MVC) и готовность быстро обучаться. Рассматриваем, как Junior, так и миддлов.</p>
                 <p>Рассматриваем, как удаленный формат работы, если есть камера и скайп, так и в офис.</p>
                 <p>Возможен рост до тимлида, либо горизонтальный рост по мере роста навыков и ответственности с повышением зарплаты.</p>
                 <p>После собеседования высылаем тестовое задание(на 4 часа), которое поможет оценить Ваши навыки.</p>
@@ -139,7 +141,7 @@
             <div class="col-sm-6">
               <div class="vacancy">
                 <a href="#">Junior SEO-специалист</a>
-                <div class="text2">Офис или удалённо. <br> 25000 — 35000 ₽</div>
+                <div class="text2">Офис или удалённо.<br>25000 — 35000 ₽</div>
               </div>
             </div>
             <div class="col-sm-6">
@@ -279,7 +281,7 @@
           <div class="col-sm-5 col-md-6 foot-inner">
             <div class="logo"><img src="img/logo.svg" alt=""></div>
             <div class="foot-box">
-              <div class="foot-slogan">E-commerce<br> development + consulting</div>
+              <div class="foot-slogan">E-commerce<br>development + consulting</div>
               ex. Altopromo
               <div class="partner"><img src="img/agima.svg" alt=""></div>
             </div>
@@ -296,12 +298,11 @@
             <div class="row foot-nav">
               <div class="col-6 col-sm-7 col-md-6">
                 <ul class="foot-menu">
-                  <li><a href="#">Компания</a></li>
+                  <li><a href="#">О компании</a></li>
                   <li><a href="#">Контакты</a></li>
-                  <li><a href="#">Портфолио</a></li>
+                  <li><a href="#">Кейсы</a></li>
                   <li><a href="#">Блог</a></li>
-                  <li><a href="#">О нас</a></li>
-                  <li><a href="#">Прислать ошибку</a></li>
+                  <li><a href="#">Прислать ошибку</a></li>                  
                   <li><a href="#">Для клиентов</a></li>
                   <li><a href="#">Отзывы</a></li>
                   <li><a href="#">Вакансии</a></li>
@@ -324,7 +325,7 @@
         <div class="row foot-btm">
           <div class="col-6 col-sm-5 col-md-6">&copy; 2014-2021</div>
           <div class="col-6 col-sm-7 col-md-6">
-            <div class="row">
+            <div class="row foot-rht">
               <div class="col-sm-6"><a href="#">Партнерская программа</a></div>
               <div class="col-sm-6"><a href="#">Карта сайта</a></div>
             </div>
@@ -332,7 +333,8 @@
         </div>
       </div>
     </footer>
-    <!--/ footer -->    
+    <!--/ footer -->
+    <button class="go-top"><svg class="icon"><use xlink:href="#chevron-up"></use></svg></button>    
     <!-- svg -->
     <svg width="0" height="0" style="display: none;">
       <symbol id="pointer" viewBox="0 0 16 22">
@@ -386,7 +388,11 @@
       </symbol>
       <symbol id="check" viewBox="0 0 20 14" fill="none">
         <path d="M1.33203 6.66667L7.33203 12.6667L18.9987 1" stroke="#8A8C99"/>
+      </symbol>      
+      <symbol id="chevron-up" viewBox="0 0 16 9" fill="none">
+        <path d="M14.5 8L7.75 1.5L1 8" stroke="#F7F8FA" stroke-width="2"/>
       </symbol>
+
     </svg>  
     <!--/ svg -->    
     <!-- Modal -->

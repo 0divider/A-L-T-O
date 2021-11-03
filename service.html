@@ -9,6 +9,9 @@
     <link href="css/bootstrap.css" rel="stylesheet">        
     <link href="css/all.css" rel="stylesheet">        
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
   </head>
   <body>
     <div class="wrapper">
@@ -81,10 +84,12 @@
             <div class="service-unit">
               <div class="h3 service-title"><a href="#">Разработка сайтов и веб-сервисов</a></div>
               Аналиризуем → прототипируем → рисуем дизайн → программируем → тестируем.
+              <div class="service-more"><a href="#">интернет-магазины</a><span>|</span><a href="#">сервисы</a><span>|</span><a href="#">корпоративные сайты</a><br><a href="#">landing page</a></div>
             </div>
             <div class="service-unit">
               <div class="h3 service-title"><a href="#">Интернет-маркетинг</a></div>
               Помогаем разработать или адаптировать сайт к актуальным требованиям Яндекса и Google. Поддерживаем после запуска.
+              <div class="service-more"><a href="#">настройка Яндекс.Директ</a><span>|</span><a href="#">настройка Google Adwords</a><br><a href="#">SMM</a><span>|</span><a href="#">SEO</a><span>|</span>аналитика</div>
             </div>
             <div class="service-unit">
               <div class="h3 service-title"><a href="#">Решения для B2B</a></div>
@@ -108,7 +113,7 @@
           <div class="tech-list">
             <div class="tech-unit">
               <div class="h3 tech-unit-title">Backend</div>
-              <span>Знаем, как заставить ваш бэкенд работать быстро даже под нагрузками. Разработаем API. Интегрируем с внешими системаи.</span>
+              <span>Знаем, как заставить ваш бэкенд работать быстро даже под нагрузками. Разработаем API. Интегрируем с внешними системами.</span>
               <div class="list">
                 <div>
                   <span>1С-Битрикс</span>
@@ -130,7 +135,7 @@
             </div>
             <div class="tech-unit">
               <div class="h3 tech-unit-title">Frontend</div>
-              <span>Разрабываем адаптивные сайты и SPA-приложения. Пользователь скажет вам спасибо за удобный frontend.</span>
+              <span>Разрабатываем адаптивные сайты и SPA-приложения. Пользователь скажет вам спасибо за удобный frontend.</span>
               <div class="list">
                 <div>
                   <span>HTML5</span>
@@ -196,7 +201,7 @@
           <div class="col-sm-5 col-md-6 foot-inner">
             <div class="logo"><img src="img/logo.svg" alt=""></div>
             <div class="foot-box">
-              <div class="foot-slogan">E-commerce<br> development + consulting</div>
+              <div class="foot-slogan">E-commerce<br>development + consulting</div>
               ex. Altopromo
               <div class="partner"><img src="img/agima.svg" alt=""></div>
             </div>
@@ -213,12 +218,11 @@
             <div class="row foot-nav">
               <div class="col-6 col-sm-7 col-md-6">
                 <ul class="foot-menu">
-                  <li><a href="#">Компания</a></li>
+                  <li><a href="#">О компании</a></li>
                   <li><a href="#">Контакты</a></li>
-                  <li><a href="#">Портфолио</a></li>
+                  <li><a href="#">Кейсы</a></li>
                   <li><a href="#">Блог</a></li>
-                  <li><a href="#">О нас</a></li>
-                  <li><a href="#">Прислать ошибку</a></li>
+                  <li><a href="#">Прислать ошибку</a></li>                  
                   <li><a href="#">Для клиентов</a></li>
                   <li><a href="#">Отзывы</a></li>
                   <li><a href="#">Вакансии</a></li>
@@ -241,7 +245,7 @@
         <div class="row foot-btm">
           <div class="col-6 col-sm-5 col-md-6">&copy; 2014-2021</div>
           <div class="col-6 col-sm-7 col-md-6">
-            <div class="row">
+            <div class="row foot-rht">
               <div class="col-sm-6"><a href="#">Партнерская программа</a></div>
               <div class="col-sm-6"><a href="#">Карта сайта</a></div>
             </div>
@@ -249,7 +253,8 @@
         </div>
       </div>
     </footer>
-    <!--/ footer -->    
+    <!--/ footer -->
+    <button class="go-top"><svg class="icon"><use xlink:href="#chevron-up"></use></svg></button>    
     <!-- svg -->
     <svg width="0" height="0" style="display: none;">
       <symbol id="pointer" viewBox="0 0 16 22">
@@ -303,7 +308,11 @@
       </symbol>
       <symbol id="check" viewBox="0 0 20 14" fill="none">
         <path d="M1.33203 6.66667L7.33203 12.6667L18.9987 1" stroke="#8A8C99"/>
+      </symbol>      
+      <symbol id="chevron-up" viewBox="0 0 16 9" fill="none">
+        <path d="M14.5 8L7.75 1.5L1 8" stroke="#F7F8FA" stroke-width="2"/>
       </symbol>
+
     </svg>  
     <!--/ svg -->    
     <!-- Modal -->
